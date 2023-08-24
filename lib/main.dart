@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'screens/main_feed_screen.dart';
+import 'package:instagram_clone/screens/splash_screen.dart';
 
-void main() {
-  runApp(MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
@@ -13,7 +11,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MainFeedScreen(),
+      home: SplashScreen(),
     );
   }
 }

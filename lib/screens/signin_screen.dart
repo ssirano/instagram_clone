@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'main_screen.dart';  // 메인 스크린 import
+import 'package:instagram_clone/screens/main_screen.dart';
+import 'package:instagram_clone/screens/signup_screen.dart';  // 메인 스크린 import
 
 class SignInScreen extends StatefulWidget {
   @override
@@ -48,6 +49,13 @@ class _SignInScreenState extends State<SignInScreen> {
                 }
               },
             ),
+            SizedBox(height: 16),
+            TextButton(
+              child: Text('Need an account? Sign Up'),
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => SignUpScreen()));
+              },
+            )
           ],
         ),
       ),
